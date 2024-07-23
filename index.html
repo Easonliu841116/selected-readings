@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<common-script></common-script>
+
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+
+	<title>中小學生讀物選介</title>
+</head>
+
+<body>
+	<my-header></my-header>
+	<main id="app">
+		<div class="full-container">
+			<section class="splide splide-banner">
+				<div class="splide__track">
+					<ul class="splide__list">
+						<li class="splide__slide"><img src="https://placehold.co/1280x600" alt="" /></li>
+						<li class="splide__slide"><img src="https://placehold.co/1280x600" alt="" /></li>
+						<li class="splide__slide"><img src="https://placehold.co/1280x600" alt="" /></li>
+					</ul>
+				</div>
+			</section>
+		</div>
+
+		<div class="container">
+			最新消息
+			<section class="splide splide-news" aria-label="Splide Basic HTML Example">
+				<div class="splide__track">
+					<ul class="splide__list">
+						<li class="splide__slide"><img src="https://placehold.co/300x300" alt="" /></li>
+						<li class="splide__slide"><img src="https://placehold.co/300x300" alt="" /></li>
+						<li class="splide__slide"><img src="https://placehold.co/300x300" alt="" /></li>
+					</ul>
+				</div>
+			</section>
+
+			選書指南
+			<section class="splide splide-guide" aria-label="Splide Basic HTML Example">
+				<div class="splide__track">
+					<ul class="splide__list">
+						<li class="splide__slide"><img src="https://placehold.co/180x200" alt="" /></li>
+						<li class="splide__slide"><img src="https://placehold.co/180x200" alt="" /></li>
+						<li class="splide__slide"><img src="https://placehold.co/180x200" alt="" /></li>
+					</ul>
+				</div>
+			</section>
+		</div>
+
+		<div class="full-container">
+			報名專區
+		</div>
+
+		<div class="container">
+			<div>報名專區</div>
+			<div>選書指南</div>
+			<div>有獎徵答</div>
+			<div>主題活動</div>
+		</div>
+	</main>
+	<my-footer></my-footer>
+	<script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
