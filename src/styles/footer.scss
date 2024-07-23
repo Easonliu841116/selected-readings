@@ -1,3 +1,8 @@
+footer {
+    max-width: var(--desktop);
+    margin: 0 auto;
+}
+
 @keyframes wobble {
     16.65% {
         transform: translateY(6px);

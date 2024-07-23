@@ -1,7 +1,7 @@
-import './styles/style.scss'; // 引入全域樣式
-import './components/common-script.js'; // 引入 common-script
-import './components/header.js'; // 引入 header
-import './components/foote1r.js'; // 引入 footer
+import './styles/style.scss';
+import './components/common-script.js';
+import './components/header.js';
+import './components/footer.js';
 
 const bannerSplide = document.querySelector(".slider-banner");
 const newsSplide = document.querySelector(".splide-news");
