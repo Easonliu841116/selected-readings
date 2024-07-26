@@ -9,5 +9,6 @@ export default defineConfig({
 				additionalData: `@import "./src/styles/variables.scss";`,
 			},
 		},
+		devSourcemap: true // Enable source maps
 	},
 })

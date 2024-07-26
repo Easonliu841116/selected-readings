@@ -8,6 +8,13 @@
     --septenary-color: #7e7e7e;
     --font-family: "Source Han Sans TC", sans-serif;
     font-family: var(--font-family);
+    --weight-extra-light: 250;
+    --weight-light: 300;
+    --weight-normal: 350;
+    --weight-regular: 400;
+    --weight-medium: 500;
+    --weight-bold: 700;
+    --weight-heavy: 900;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
