@@ -1,3 +1,2 @@
-import './styles/style.scss';
-import './components/header.js';
-import './components/footer.js';
+import './styles/index.scss';
+import './components/common-script.js';

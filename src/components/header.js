@@ -5,7 +5,9 @@ class MyHeader extends HTMLElement {
         this.innerHTML = `
     <header>
     <div class="upper-part container">
-        <img src="/src/assets/logo.png" alt="中小學生讀物選介-logo" width="240" height="60" />
+        <a class="logo" href="#">
+            <img src="/src/assets/logo.png" alt="中小學生讀物選介-logo" width="240" height="60" />
+        </a>
 
         <ul class="note-pc">
             <li><a href="#">首頁</a></li>

@@ -1,6 +1,10 @@
+import './header.js';
+import './footer.js';
+import '../styles/style.scss';
+
 class CommonScript extends HTMLElement {
-	connectedCallback() {
-		this.innerHTML = `
+    connectedCallback() {
+        this.innerHTML = `
         <script>
         (function (d) {
             var config = {
@@ -12,7 +16,7 @@ class CommonScript extends HTMLElement {
         })(document);
         </script>
     `;
-	}
+    }
 }
 
 customElements.define('common-script', CommonScript);
