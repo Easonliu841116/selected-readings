@@ -57,6 +57,7 @@ footer {
 
     .logo {
         display: flex;
+        width: fit-content;
 
         img {
             @media (max-width: $tablet) {
@@ -155,7 +156,6 @@ footer {
 .gotop {
     display: none;
     position: fixed;
-    z-index: 3;
     bottom: 115px;
     right: 4%;
     border-radius: 50%;

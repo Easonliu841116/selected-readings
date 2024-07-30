@@ -19,7 +19,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     --container-largeDesktop: 1280px;
-    --container-desktop: 1240px;
+    --container-desktop: 1257px;
     --container-tablet: 983px;
     --container-mobile: 727px;
     --container-smallMobile: 280px;
@@ -66,6 +66,11 @@ main {
     padding-inline: 10px;
     width: fit-content;
 
+    @media (max-width: $tablet) {
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
     &::before {
         content: "";
         position: absolute;
@@ -77,4 +82,31 @@ main {
         border-radius: 8px;
         z-index: -1;
     }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .more {
+            height: 32px;
+            display: flex;
+            align-items: center;
+
+            &:hover svg g path {
+                fill: var(--primary-color);
+            }
+        }
+    }
+}
+
+.splide__pagination {
+    z-index: 0;
+}
+
+.btn {
+    outline: none;
+    cursor: pointer;
+    border-style: solid;
+    transition: all 0.3s ease;
 }

@@ -1,4 +1,24 @@
+.splide__arrow {
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+
+    svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    &:hover {
+        &:not(:disabled) {
+            opacity: 1;
+        }
+    }
+}
+
 .splide-banner {
+    margin-bottom: 15px;
+
     .splide__bg {
         position: absolute;
         top: 0;
@@ -26,23 +46,12 @@
     .splide__arrow {
         background: transparent;
         border: 1px solid transparent;
-        width: 50px;
-        height: 50px;
-        opacity: 1;
-        transition: all 0.3s ease-in-out;
 
         &:hover {
             border: 1px solid var(--primary-color);
-
-            &:not(:disabled) {
-                opacity: 1;
-            }
         }
 
         svg {
-            width: 20px;
-            height: 20px;
-
             path {
                 fill: var(--primary-color);
             }
@@ -82,7 +91,25 @@
 }
 
 .title {
-    margin-block: 40px 20px;
+    margin-block: 25px 15px;
+
+    @media (max-width: $tablet) {
+        margin-block-start: 15px;
+    }
+
+    &__wrapper {
+        @media (max-width: $desktop) {
+            margin-inline: 20px;
+        }
+
+        .more {
+            margin-block: 25px 15px;
+
+            @media (max-width: $tablet) {
+                margin-block-start: 15px;
+            }
+        }
+    }
 }
 
 .splide-news,
@@ -96,37 +123,491 @@
     }
 
     .splide__slide {
+        padding: 5px;
+    }
+
+    .splide__card {
+        display: flex;
+        flex-direction: column;
         border-radius: 5px;
-        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
+        background-color: white;
+
+        &:hover {
+            box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+        }
+    }
+
+    .splide__card--img {
+        border-radius: 5px 5px 0 0;
+        overflow: hidden;
+        position: relative;
+
+        span {
+            position: absolute;
+            left: 10px;
+            bottom: 10px;
+            padding: 1.5px 5px 3.5px;
+            background-color: var(--primary-color);
+            border-radius: 5px;
+            box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
+            color: white;
+            font-size: 14px;
+            font-weight: var(--weight-light);
+            letter-spacing: 0.3px;
+        }
+    }
+
+    .splide__card--text {
+        padding-block: 10px;
+        position: relative;
+
+        h3 {
+            font-size: 18px;
+            font-weight: var(--weight-regular);
+            color: #000;
+            margin-block: 0 5px;
+            line-height: 1.389;
+            -webkit-line-clamp: 2;
+            max-height: 2.778em;
+
+            @media (max-width: $tablet) {
+                font-size: 16px;
+                line-height: 1.438;
+                max-height: 2.876em;
+            }
+
+            span {
+                display: none;
+                margin-right: 10px;
+                color: var(--primary-color);
+
+                @media (max-width: $tablet) {
+                    display: inline-block;
+                }
+            }
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: var(--weight-normal);
+            color: var(--septenary-color);
+            margin-block: 0;
+            line-height: 1.429;
+            -webkit-line-clamp: 1;
+            max-height: 1.429em;
+        }
+
+        time {
+            font-size: 14px;
+            font-weight: var(--weight-bold);
+            color: var(--primary-color);
+            display: flex;
+
+            @media (max-width: $tablet) {
+                visibility: hidden;
+                position: absolute;
+                z-index: -1;
+            }
+        }
+
+        h3,
+        p {
+            display: inline-block;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        h3,
+        p,
+        time {
+            text-align: left;
+        }
+    }
+
+    .splide__arrow {
+        background: white;
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
+
+        svg {
+            path {
+                fill: var(--secondary-color);
+            }
+        }
+
+        &:hover {
+            svg path {
+                fill: var(--primary-color);
+            }
+        }
     }
 }
 
 .splide-news {
-    max-width: 1250px;
+    max-width: 1260px;
+    margin-bottom: 15px;
 
-    .splide__track {
-        height: 346px;
+    @media (max-width: $desktop) {
+        max-width: calc(100% - 30px);
+    }
+
+    @media (max-width: $tablet) {
+        max-width: 100%;
+        margin-inline: 20px;
+    }
+
+    .splide__slide {
+        @media (max-width: $tablet) {
+            padding: 10px;
+            border-bottom: 1px dashed var(--senary-color);
+        }
+
+        &:first-child {
+            @media (max-width: $tablet) {
+                padding-block-start: 0;
+            }
+        }
+
+        &:last-child {
+            @media (max-width: $tablet) {
+                padding-block-end: 0;
+                border-bottom: none;
+            }
+        }
+    }
+
+    .splide__card {
+        @media (max-width: $tablet) {
+            border-radius: 0;
+            box-shadow: none;
+        }
+
+        &:hover {
+            @media (max-width: $tablet) {
+                box-shadow: none;
+            }
+        }
     }
 
     .splide__card--img {
         width: 290px;
         height: 240px;
-        border-radius: 5px 5px 0 0;
-        overflow: hidden;
+
+        @media (max-width: $tablet) {
+            display: none;
+        }
+    }
+
+    .splide__card--text {
+        padding-inline: 20px;
+
+        @media (max-width: $tablet) {
+            padding-inline: 0;
+            padding-block: 0;
+        }
+
+        h3 {
+            @media (max-width: $tablet) {
+                margin-block-end: 0;
+                letter-spacing: 0.2px;
+            }
+        }
+    }
+
+    .splide__arrow {
+        &--prev {
+            left: -10px;
+        }
+
+        &--next {
+            right: -10px;
+        }
     }
 }
 
 .splide-guide {
-    max-width: 1230px;
+    max-width: 1240px;
+    margin-bottom: 15px;
 
-    .splide__track {
-        height: 356px;
+    @media (max-width: $desktop) {
+        max-width: calc(100% - 30px);
+    }
+
+    @media (max-width: $tablet) {
+        max-width: 100%;
+        margin-inline: 15px;
     }
 
     .splide__card--img {
         width: 180px;
         height: 250px;
-        border-radius: 5px 5px 0 0;
-        overflow: hidden;
+
+        @media (max-width: $tablet) {
+            width: 155px;
+            height: 215px;
+        }
+    }
+
+    .splide__card--text {
+        padding-inline: 10px;
+    }
+
+    .splide__arrow {
+        &--prev {
+            left: -20px;
+
+            @media (max-width: $desktop) {
+                left: -10px;
+            }
+        }
+
+        &--next {
+            right: -20px;
+
+            @media (max-width: $desktop) {
+                right: -10px;
+            }
+        }
+    }
+}
+
+.registration-area {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: var(--tertiary-color);
+        z-index: -1;
+    }
+
+    @media (max-width: $tablet) {
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    .title {
+        margin-block: 30px 20px;
+
+        @media (max-width: $tablet) {
+            margin-block: 20px;
+        }
+    }
+
+    .next {
+        margin-block: 30px;
+        border-radius: 50px;
+        border-width: 1px;
+        border-color: var(--primary-color);
+        background-color: white;
+        color: var(--primary-color);
+        padding: 7px 20px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        font-size: 18px;
+        font-weight: var(--weight-regular);
+        letter-spacing: 0.3px;
+
+        @media (max-width: $tablet) {
+            font-size: 16px;
+        }
+
+        svg path {
+            transition: all 0.3s ease-in-out;
+        }
+
+        &:hover {
+            border-color: var(--septenary-color);
+            color: var(--septenary-color);
+
+            svg path {
+                stroke: var(--septenary-color);
+            }
+        }
+    }
+}
+
+.registration__wrapper {
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: $tablet) {
+        width: calc(100% - 40px);
+    }
+
+    .line {
+        width: 100%;
+        height: 21px;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            height: 0;
+            border-bottom: 1px dashed var(--septenary-color);
+        }
+    }
+
+    p,
+    li {
+        font-size: 18px;
+        font-weight: var(--weight-regular);
+        letter-spacing: 0.3px;
+        text-align: left;
+
+        @media (max-width: $tablet) {
+            font-size: 16px;
+            letter-spacing: 0.2px;
+        }
+    }
+
+    p {
+        margin-block: 0;
+
+        &.blue {
+            color: var(--primary-color);
+        }
+
+        &.bold {
+            font-weight: var(--weight-bold);
+        }
+    }
+
+    ul {
+        list-style: none;
+        margin-block: 0;
+        padding-inline-start: 0;
+    }
+
+    li {
+        margin-bottom: 10px;
+
+        &::before {
+            content: attr(data-order);
+            margin-right: 4px;
+        }
+
+        &:has(.file)::before {
+            margin-right: 2px;
+            position: relative;
+            top: -5px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        .example {
+            font-size: 14px;
+            letter-spacing: 0.3px;
+
+            @media (max-width: $tablet) {
+                letter-spacing: 0.4px;
+            }
+        }
+
+        &:has(.example) {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            width: calc(100% - 27px);
+            position: relative;
+            left: 27px;
+
+            &::before {
+                position: absolute;
+                left: -27px;
+            }
+        }
+    }
+
+    .file {
+        width: fit-content;
+        display: inline-flex;
+        gap: 10px;
+        align-items: center;
+        padding: 4px 10px;
+        border-color: var(--primary-color);
+        border-width: 1px;
+        border-radius: 5px;
+        background-color: var(--primary-color);
+        color: white;
+        font-size: 16px;
+        font-weight: var(--weight-regular);
+        letter-spacing: 0.3px;
+
+        &:hover {
+            background-color: var(--septenary-color);
+            border-color: var(--primary-color);
+        }
+    }
+
+    .mb-10 {
+        margin-bottom: 10px;
+    }
+
+    .mb-20 {
+        margin-bottom: 20px;
+    }
+}
+
+.splide-registration {
+    width: fit-content;
+    padding-inline: 20px;
+    margin-bottom: 20px;
+    z-index: 0;
+
+    .splide__slide {
+        padding: 8px 10px;
+        background-color: white;
+        color: var(--septenary-color);
+        font-size: 16px;
+        font-weight: var(--weight-medium);
+        letter-spacing: 0.5px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
+        @media (max-width: $tablet) {
+            font-weight: var(--weight-regular);
+        }
+
+        &:first-child {
+            border-radius: 20px 0 0 20px;
+        }
+
+        &:last-child {
+            border-radius: 0 20px 20px 0;
+        }
+
+        &:hover {
+            color: var(--primary-color);
+        }
+
+        &.is-active {
+            background-color: var(--primary-color);
+            color: white;
+        }
+    }
+}
+
+.tour {
+    margin-block: 60px 60px;
+
+    @media (max-width: $tablet) {
+        margin-block: 15px;
     }
 }

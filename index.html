@@ -7,16 +7,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<common-script></common-script>
 
-	<!--<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-	<link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">-->
-
 	<title>中小學生讀物選介</title>
 </head>
 
 <body>
 	<my-header></my-header>
 	<main id="app">
-		<!--<div class="full-container">-->
 		<section class="splide splide-banner full-container">
 			<div class="splide__track">
 				<ul class="splide__list"><!--標準尺寸：1280 * 600-->
@@ -53,164 +49,332 @@
 				</ul>
 			</div>
 		</section>
-		<!--</div>-->
 
 		<div class="container">
-			<h2 class="title">最新消息</h2>
-			<section class="splide splide-news" aria-label="Splide Basic HTML Example">
+			<div class="title__wrapper">
+				<h2 class="title">最新消息</h2>
+
+				<a href="#" class="more">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16"
+						height="3.828" viewBox="0 0 16 3.828">
+						<defs>
+							<clipPath id="clip-path">
+								<rect id="Rectangle_1154" data-name="Rectangle 1154" width="16" height="3.828"
+									transform="translate(0 0)" fill="#7e7e7e" />
+							</clipPath>
+						</defs>
+						<g id="Group_11254" data-name="Group 11254" clip-path="url(#clip-path)">
+							<path id="Path_16206" data-name="Path 16206"
+								d="M1.914,0a1.914,1.914,0,0,0,0,3.828,1.737,1.737,0,0,0,1.34-.574,1.737,1.737,0,0,0,.574-1.34A1.811,1.811,0,0,0,3.254.574,1.737,1.737,0,0,0,1.914,0"
+								transform="translate(0 0)" fill="#7e7e7e" />
+							<path id="Path_16207" data-name="Path 16207"
+								d="M18.65,0a1.914,1.914,0,0,0,0,3.828,1.737,1.737,0,0,0,1.34-.574,1.737,1.737,0,0,0,.574-1.34A1.811,1.811,0,0,0,19.99.574,1.737,1.737,0,0,0,18.65,0"
+								transform="translate(-10.65 0)" fill="#7e7e7e" />
+							<path id="Path_16208" data-name="Path 16208"
+								d="M36.726.574A1.737,1.737,0,0,0,35.386,0a1.914,1.914,0,1,0,0,3.828,1.737,1.737,0,0,0,1.34-.574,1.737,1.737,0,0,0,.574-1.34,1.811,1.811,0,0,0-.574-1.34"
+								transform="translate(-21.3 0)" fill="#7e7e7e" />
+						</g>
+					</svg>
+				</a>
+			</div>
+
+			<section class="splide splide-news" aria-label="最新消息">
 				<div class="splide__track">
 					<ul class="splide__list"><!--標準尺寸：290 * 240-->
 						<li class="splide__slide">
-							<div class="splide__card--img">
-								<img src="https://placehold.co/290x240" alt="" width="290" height="240" /><!--標準-->
-							</div>
-							<div class="splide__card--text">
-								<h3>文化部「第45次中小學生讀物選介」獲選好書－有獎徵答等推廣活</h3>
-								<time datetime="">112.10.06</time>
-							</div>
+							<a href="#" class="splide__card">
+								<div class="splide__card--img">
+									<img src="https://placehold.co/290x240" alt="" width="290" height="240" /><!--標準-->
+								</div>
+								<div class="splide__card--text">
+									<h3><span>112.10.06</span>文化部「第45次中小學生讀物選介」獲選好書－有獎徵答等推廣活</h3>
+									<time datetime="">112.10.06</time>
+								</div>
+							</a>
 						</li>
 						<li class="splide__slide">
-							<div class="splide__card--img">
-								<img src="https://placehold.co/350x240" alt="" width="350" height="240" /><!--寬度超過-->
-							</div>
-							<div class="splide__card--text">
-								<h3>文化部「第45次中小學生讀物選介」獲選好書－有獎徵答等推廣活</h3>
-								<time datetime="">112.10.06</time>
-							</div>
+							<a href="#" class="splide__card">
+								<div class="splide__card--img">
+									<img src="https://placehold.co/350x240" alt="" width="350"
+										height="240" /><!--寬度超過-->
+								</div>
+								<div class="splide__card--text">
+									<h3><span>112.10.06</span>文化部「第45次中小學生讀物選介」獲選好書－有獎徵答等推廣活</h3>
+									<time datetime="">112.10.06</time>
+								</div>
+							</a>
 						</li>
 						<li class="splide__slide">
-							<div class="splide__card--img">
-								<img src="https://placehold.co/290x350" alt="" width="290" height="350" /><!--高度超過-->
-							</div>
-							<div class="splide__card--text">
-								<h3>文化部「第45次中小學生讀物選介」獲選好書－有獎徵答等推廣活</h3>
-								<time datetime="">112.10.06</time>
-							</div>
+							<a href="#" class="splide__card">
+								<div class="splide__card--img">
+									<img src="https://placehold.co/290x350" alt="" width="290"
+										height="350" /><!--高度超過-->
+								</div>
+								<div class="splide__card--text">
+									<h3><span>112.10.06</span>文化部「第45次中小學生讀物選介」獲選好書－有獎徵答等推廣活</h3>
+									<time datetime="">112.10.06</time>
+								</div>
+							</a>
 						</li>
 						<li class="splide__slide">
-							<div class="splide__card--img">
-								<img src="https://placehold.co/350x290" alt="" width="350" height="290" /><!--寬度、高度超過-->
-							</div>
-							<div class="splide__card--text">
-								<h3>文化部「第45次中小學生讀物選介」獲選好書－有獎徵答等推廣活</h3>
-								<time datetime="">112.10.06</time>
-							</div>
+							<a href="#" class="splide__card">
+								<div class="splide__card--img">
+									<img src="https://placehold.co/350x290" alt="" width="350"
+										height="290" /><!--寬度、高度超過-->
+								</div>
+								<div class="splide__card--text">
+									<h3><span>112.10.06</span>文化部「第45次中小學生讀物選介」獲選好書－有獎徵答等推廣活</h3>
+									<time datetime="">112.10.06</time>
+								</div>
+							</a>
 						</li>
 						<li class="splide__slide">
-							<div class="splide__card--img">
-								<img src="https://placehold.co/240x240" alt="" width="240" height="240" /><!--寬度不夠-->
-							</div>
-							<div class="splide__card--text">
-								<h3>文化部「第45次中小學生讀物選介」獲選好書－有獎徵答等推廣活</h3>
-								<time datetime="">112.10.06</time>
-							</div>
+							<a href="#" class="splide__card">
+								<div class="splide__card--img">
+									<img src="https://placehold.co/240x240" alt="" width="240"
+										height="240" /><!--寬度不夠-->
+								</div>
+								<div class="splide__card--text">
+									<h3><span>112.10.06</span>文化部「第45次中小學生讀物選介」獲選好書－有獎徵答等推廣活</h3>
+									<time datetime="">112.10.06</time>
+								</div>
+							</a>
 						</li>
 						<li class="splide__slide">
-							<div class="splide__card--img">
-								<img src="https://placehold.co/290x200" alt="" width="290" height="200" /><!--高度不夠-->
-							</div>
-							<div class="splide__card--text">
-								<h3>文化部「第45次中小學生讀物選介」獲選好書－有獎徵答等推廣活</h3>
-								<time datetime="">112.10.06</time>
-							</div>
+							<a href="#" class="splide__card">
+								<div class="splide__card--img">
+									<img src="https://placehold.co/290x200" alt="" width="290"
+										height="200" /><!--高度不夠-->
+								</div>
+								<div class="splide__card--text">
+									<h3><span>112.10.06</span>文化部「第45次中小學生讀物選介」獲選好書－有獎徵答等推廣活</h3>
+									<time datetime="">112.10.06</time>
+								</div>
+							</a>
 						</li>
 						<li class="splide__slide">
-							<div class="splide__card--img">
-								<img src="https://placehold.co/240x200" alt="" width="240" height="200" /><!--寬度、高度不夠-->
-							</div>
-							<div class="splide__card--text">
-								<h3>文化部「第45次中小學生讀物選介」獲選好書－有獎徵答等推廣活</h3>
-								<time datetime="">112.10.06</time>
-							</div>
+							<a href="#" class="splide__card">
+								<div class="splide__card--img">
+									<img src="https://placehold.co/240x200" alt="" width="240"
+										height="200" /><!--寬度、高度不夠-->
+								</div>
+								<div class="splide__card--text">
+									<h3><span>112.10.06</span>文化部「第45次中小學生讀物選介」獲選好書－有獎徵答等推廣活</h3>
+									<time datetime="">112.10.06</time>
+								</div>
+							</a>
 						</li>
 					</ul>
 				</div>
 			</section>
 
-			<h2 class="title">選書指南</h2>
-			<section class="splide splide-guide" aria-label="Splide Basic HTML Example">
+			<div class="title__wrapper">
+				<h2 class="title">選書指南</h2>
+
+				<a href="#" class="more">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16"
+						height="3.828" viewBox="0 0 16 3.828">
+						<defs>
+							<clipPath id="clip-path">
+								<rect id="Rectangle_1154" data-name="Rectangle 1154" width="16" height="3.828"
+									transform="translate(0 0)" fill="#7e7e7e" />
+							</clipPath>
+						</defs>
+						<g id="Group_11254" data-name="Group 11254" clip-path="url(#clip-path)">
+							<path id="Path_16206" data-name="Path 16206"
+								d="M1.914,0a1.914,1.914,0,0,0,0,3.828,1.737,1.737,0,0,0,1.34-.574,1.737,1.737,0,0,0,.574-1.34A1.811,1.811,0,0,0,3.254.574,1.737,1.737,0,0,0,1.914,0"
+								transform="translate(0 0)" fill="#7e7e7e" />
+							<path id="Path_16207" data-name="Path 16207"
+								d="M18.65,0a1.914,1.914,0,0,0,0,3.828,1.737,1.737,0,0,0,1.34-.574,1.737,1.737,0,0,0,.574-1.34A1.811,1.811,0,0,0,19.99.574,1.737,1.737,0,0,0,18.65,0"
+								transform="translate(-10.65 0)" fill="#7e7e7e" />
+							<path id="Path_16208" data-name="Path 16208"
+								d="M36.726.574A1.737,1.737,0,0,0,35.386,0a1.914,1.914,0,1,0,0,3.828,1.737,1.737,0,0,0,1.34-.574,1.737,1.737,0,0,0,.574-1.34,1.811,1.811,0,0,0-.574-1.34"
+								transform="translate(-21.3 0)" fill="#7e7e7e" />
+						</g>
+					</svg>
+				</a>
+			</div>
+
+			<section class="splide splide-guide" aria-label="選書指南">
 				<div class="splide__track">
 					<ul class="splide__list"><!--標準尺寸：180 * 250-->
 						<li class="splide__slide">
-							<div class="splide__card--img">
-								<img src="https://placehold.co/180x250" alt="" width="180" height="250" /><!--標準-->
-								<span>圖畫書類</span>
-							</div>
-							<div class="splide__card--text">
-								<h3>《做伙來踅大稻埕》台文繪本套書(《大稻埕動物園》台文繪本+《大稻埕ê山珍海味》台文迷你圖鑑)</h3>
-								<p>《大稻埕動物園》圖文：林小杯 /《大稻埕ê山珍海味》圖：吳睿哲</p>
-							</div>
+							<a href="#" class="splide__card">
+								<div class="splide__card--img">
+									<img src="https://placehold.co/180x250" alt="" width="180" height="250" /><!--標準-->
+									<span>圖畫書類</span>
+								</div>
+								<div class="splide__card--text">
+									<h3>《做伙來踅大稻埕》台文繪本套書(《大稻埕動物園》台文繪本+《大稻埕ê山珍海味》台文迷你圖鑑)</h3>
+									<p>《大稻埕動物園》圖文：林小杯 /《大稻埕ê山珍海味》圖：吳睿哲</p>
+								</div>
+							</a>
 						</li>
 						<li class="splide__slide">
-							<div class="splide__card--img">
-								<img src="https://placehold.co/250x250" alt="" width="250" height="250" /><!--寬度超過-->
-								<span>圖畫書類</span>
-							</div>
-							<div class="splide__card--text">
-								<h3>《做伙來踅大稻埕》台文繪本套書(《大稻埕動物園》台文繪本+《大稻埕ê山珍海味》台文迷你圖鑑)</h3>
-								<p>《大稻埕動物園》圖文：林小杯 /《大稻埕ê山珍海味》圖：吳睿哲</p>
-							</div>
+							<a href="#" class="splide__card">
+								<div class="splide__card--img">
+									<img src="https://placehold.co/250x250" alt="" width="250"
+										height="250" /><!--寬度超過-->
+									<span>圖畫書類</span>
+								</div>
+								<div class="splide__card--text">
+									<h3>《做伙來踅大稻埕》台文繪本套書(《大稻埕動物園》台文繪本+《大稻埕ê山珍海味》台文迷你圖鑑)</h3>
+									<p>《大稻埕動物園》圖文：林小杯 /《大稻埕ê山珍海味》圖：吳睿哲</p>
+								</div>
+							</a>
 						</li>
 						<li class="splide__slide">
-							<div class="splide__card--img">
-								<img src="https://placehold.co/180x280" alt="" width="180" height="280" /><!--高度超過-->
-								<span>圖畫書類</span>
-							</div>
-							<div class="splide__card--text">
-								<h3>《做伙來踅大稻埕》台文繪本套書(《大稻埕動物園》台文繪本+《大稻埕ê山珍海味》台文迷你圖鑑)</h3>
-								<p>《大稻埕動物園》圖文：林小杯 /《大稻埕ê山珍海味》圖：吳睿哲</p>
-							</div>
+							<a href="#" class="splide__card">
+								<div class="splide__card--img">
+									<img src="https://placehold.co/180x280" alt="" width="180"
+										height="280" /><!--高度超過-->
+									<span>圖畫書類</span>
+								</div>
+								<div class="splide__card--text">
+									<h3>《做伙來踅大稻埕》台文繪本套書(《大稻埕動物園》台文繪本+《大稻埕ê山珍海味》台文迷你圖鑑)</h3>
+									<p>《大稻埕動物園》圖文：林小杯 /《大稻埕ê山珍海味》圖：吳睿哲</p>
+								</div>
+							</a>
 						</li>
 						<li class="splide__slide">
-							<div class="splide__card--img">
-								<img src="https://placehold.co/280x280" alt="" width="280" height="280" /><!--寬度、高度超過-->
-								<span>圖畫書類</span>
-							</div>
-							<div class="splide__card--text">
-								<h3>《做伙來踅大稻埕》台文繪本套書(《大稻埕動物園》台文繪本+《大稻埕ê山珍海味》台文迷你圖鑑)</h3>
-								<p>《大稻埕動物園》圖文：林小杯 /《大稻埕ê山珍海味》圖：吳睿哲</p>
-							</div>
+							<a href="#" class="splide__card">
+								<div class="splide__card--img">
+									<img src="https://placehold.co/280x280" alt="" width="280"
+										height="280" /><!--寬度、高度超過-->
+									<span>圖畫書類</span>
+								</div>
+								<div class="splide__card--text">
+									<h3>《做伙來踅大稻埕》台文繪本套書(《大稻埕動物園》台文繪本+《大稻埕ê山珍海味》台文迷你圖鑑)</h3>
+									<p>《大稻埕動物園》圖文：林小杯 /《大稻埕ê山珍海味》圖：吳睿哲</p>
+								</div>
+							</a>
 						</li>
 						<li class="splide__slide">
-							<div class="splide__card--img">
-								<img src="https://placehold.co/150x250" alt="" width="150" height="250" /><!--寬度不夠-->
-								<span>圖畫書類</span>
-							</div>
-							<div class="splide__card--text">
-								<h3>《做伙來踅大稻埕》台文繪本套書(《大稻埕動物園》台文繪本+《大稻埕ê山珍海味》台文迷你圖鑑)</h3>
-								<p>《大稻埕動物園》圖文：林小杯 /《大稻埕ê山珍海味》圖：吳睿哲</p>
-							</div>
+							<a href="#" class="splide__card">
+								<div class="splide__card--img">
+									<img src="https://placehold.co/150x250" alt="" width="150"
+										height="250" /><!--寬度不夠-->
+									<span>圖畫書類</span>
+								</div>
+								<div class="splide__card--text">
+									<h3>《做伙來踅大稻埕》台文繪本套書(《大稻埕動物園》台文繪本+《大稻埕ê山珍海味》台文迷你圖鑑)</h3>
+									<p>《大稻埕動物園》圖文：林小杯 /《大稻埕ê山珍海味》圖：吳睿哲</p>
+								</div>
+							</a>
 						</li>
 						<li class="splide__slide">
-							<div class="splide__card--img">
-								<img src="https://placehold.co/180x150" alt="" width="180" height="150" /><!--高度不夠-->
-								<span>圖畫書類</span>
-							</div>
-							<div class="splide__card--text">
-								<h3>《做伙來踅大稻埕》台文繪本套書(《大稻埕動物園》台文繪本+《大稻埕ê山珍海味》台文迷你圖鑑)</h3>
-								<p>《大稻埕動物園》圖文：林小杯 /《大稻埕ê山珍海味》圖：吳睿哲</p>
-							</div>
+							<a href="#" class="splide__card">
+								<div class="splide__card--img">
+									<img src="https://placehold.co/180x150" alt="" width="180"
+										height="150" /><!--高度不夠-->
+									<span>圖畫書類</span>
+								</div>
+								<div class="splide__card--text">
+									<h3>《做伙來踅大稻埕》台文繪本套書(《大稻埕動物園》台文繪本+《大稻埕ê山珍海味》台文迷你圖鑑)</h3>
+									<p>《大稻埕動物園》圖文：林小杯 /《大稻埕ê山珍海味》圖：吳睿哲</p>
+								</div>
+							</a>
 						</li>
 						<li class="splide__slide">
-							<div class="splide__card--img">
-								<img src="https://placehold.co/280x280" alt="" width="150" height="150" /><!--寬度、高度不夠-->
-								<span>圖畫書類</span>
-							</div>
-							<div class="splide__card--text">
-								<h3>《做伙來踅大稻埕》台文繪本套書(《大稻埕動物園》台文繪本+《大稻埕ê山珍海味》台文迷你圖鑑)</h3>
-								<p>《大稻埕動物園》圖文：林小杯 /《大稻埕ê山珍海味》圖：吳睿哲</p>
-							</div>
+							<a href="#" class="splide__card">
+								<div class="splide__card--img">
+									<img src="https://placehold.co/280x280" alt="" width="150"
+										height="150" /><!--寬度、高度不夠-->
+									<span>圖畫書類</span>
+								</div>
+								<div class="splide__card--text">
+									<h3>《做伙來踅大稻埕》台文繪本套書(《大稻埕動物園》台文繪本+《大稻埕ê山珍海味》台文迷你圖鑑)</h3>
+									<p>《大稻埕動物園》圖文：林小杯 /《大稻埕ê山珍海味》圖：吳睿哲</p>
+								</div>
+							</a>
 						</li>
 					</ul>
 				</div>
 			</section>
 		</div>
 
-		<div class="full-container">
+		<div class="registration-area full-container">
 			<h2 class="title">報名專區</h2>
+
+			<section class="splide splide-registration" aria-label="報名專區">
+				<div class="splide__track">
+					<ul class="splide__list">
+						<li class="splide__slide">
+							下載檔案
+						</li>
+
+						<li class="splide__slide">
+							線上填表、列印表單
+						</li>
+
+						<li class="splide__slide">
+							檔案上傳
+						</li>
+
+						<li class="splide__slide">
+							完成線上報名、郵寄讀物及文件
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<div class="registration__wrapper">
+				<!-- 可在class添加"mb-10"、"mb-20"更改"margin-botton" -->
+				<p class="mb-10">活動簡章：</p>
+
+				<ul class="mb-10">
+					<li data-order="(1)">採網路報名，請於線上報名填表前，先詳閱活動簡章及注意事項。</li>
+					<li data-order="(2)">下截【表二：參選讀物資料】表格檔案，填妥後再開始進行線上報名步驟。</li>
+				</ul>
+
+				<div class="line"></div>
+
+				<p class="blue bold mb-10">報名前，請先下载以下表格檔案，填妥後，進行以下報名步驟</p>
+
+				<button class="btn file mb-20" type="button">
+					<svg xmlns="http://www.w3.org/2000/svg" width="15" height="20.205" viewBox="0 0 15 20.205">
+						<path id="Path_16276" data-name="Path 16276"
+							d="M3.333,16.837h.833V16H3.333Zm1.667,0h6.667V16H5ZM3.333,14.312h.833V13.47H3.333Zm1.667,0h6.667V13.47H5ZM3.333,11.786h.833v-.842H3.333Zm1.667,0h6.667v-.842H5ZM3.333,9.261h.833V8.419H3.333ZM5,9.261h6.667V8.419H5ZM3.333,6.735h.833V5.893H3.333ZM5,6.735h6.667V5.893H5ZM1.667,1.684H10V4.157h3.333V18.468H1.667ZM0,0V20.2H15V3.367L11.615,0Z"
+							fill="#fff" />
+					</svg>
+
+					<span>表二：參選讀物資料</span>
+				</button>
+
+				<ul>
+					<li data-order="(1)">
+						請自行依據參選讀物之數量，增加檔案表格中之sheet工作表。<br />
+						<span class="example">例如：欲提交10本參選讀物，請於檔案中，增加10個sheet工作表。</span>
+					</li>
+					<li data-order="(2)">
+						上傳檔案命名方式：申請人姓名（或名稱）_表二参選讀物資料。<br />
+						<span class="example">例如：聯合線上股份有限公司_表二參選讀物資料。</span>
+					</li>
+					<li data-order="(3)">
+						<button class="btn file" type="button">
+							<svg xmlns="http://www.w3.org/2000/svg" width="15" height="20.205" viewBox="0 0 15 20.205">
+								<path id="Path_16276" data-name="Path 16276"
+									d="M3.333,16.837h.833V16H3.333Zm1.667,0h6.667V16H5ZM3.333,14.312h.833V13.47H3.333Zm1.667,0h6.667V13.47H5ZM3.333,11.786h.833v-.842H3.333Zm1.667,0h6.667v-.842H5ZM3.333,9.261h.833V8.419H3.333ZM5,9.261h6.667V8.419H5ZM3.333,6.735h.833V5.893H3.333ZM5,6.735h6.667V5.893H5ZM1.667,1.684H10V4.157h3.333V18.468H1.667ZM0,0V20.2H15V3.367L11.615,0Z"
+									fill="#fff" />
+							</svg>
+
+							<span>表二：填表範例下載</span>
+						</button>
+					</li>
+				</ul>
+			</div>
+
+			<button class="btn next" type="button">
+				<span>下一步</span>
+				<svg xmlns="http://www.w3.org/2000/svg" width="7.879" height="13.394" viewBox="0 0 7.879 13.394">
+					<path id="Path_16277" data-name="Path 16277" d="M6.1,0,0,5.748,6.1,12l.35-.322L.672,5.762,6.42.323Z"
+						transform="translate(7.166 12.697) rotate(180)" fill="#3b84b7" stroke="#3b84b7"
+						stroke-linecap="round" stroke-width="1" />
+				</svg>
+			</button>
 		</div>
 
-		<div class="container">
+		<div class="tour container">
 			<div>報名專區</div>
 			<div>選書指南</div>
 			<div>有獎徵答</div>
