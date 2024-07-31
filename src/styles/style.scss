@@ -37,6 +37,7 @@ body {
 
 main {
     width: 100%;
+    min-height: 100vh;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -109,4 +110,25 @@ main {
     cursor: pointer;
     border-style: solid;
     transition: all 0.3s ease;
+}
+
+.breadcrumb {
+    margin-block: 20px 40px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+    font-size: 13px;
+    font-weight: var(--weight-normal);
+    line-height: 1.462;
+    letter-spacing: 0.5px;
+    color: var(--septenary-color);
+
+    a {
+        color: var(--septenary-color);
+        transition: all 0.3s ease;
+
+        &:hover {
+            color: var(--primary-color);
+        }
+    }
 }

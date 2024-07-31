@@ -1,4 +1,4 @@
-import '../styles/header.scss';
+import '@/styles/header.scss';
 
 class MyHeader extends HTMLElement {
     connectedCallback() {

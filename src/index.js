@@ -1,6 +1,8 @@
 import '@splidejs/splide/css';
-import './styles/index.scss';
-import './components/common-script.js';
+import '@/styles/index.scss';
+import '@/components/common-script.js';
+import '@/components/slider.js';
+import '@/components/img-size.js';
 import Splide from '@splidejs/splide';
 
 const bannerSplide = document.querySelector(".slider-banner");

@@ -1,14 +1,17 @@
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vite';
+import path from 'path';
 
 export default defineConfig({
-	root: './',
-	publicDir: 'public',
 	css: {
 		preprocessorOptions: {
 			scss: {
-				additionalData: `@import "./src/styles/variables.scss";`,
-			},
-		},
-		devSourcemap: true // Enable source maps
+				additionalData: `@import "@/styles/variables.scss";`
+			}
+		}
 	},
-})
+	resolve: {
+		alias: {
+			'@': path.resolve(__dirname, 'src')
+		}
+	}
+});
