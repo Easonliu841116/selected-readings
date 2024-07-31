@@ -87,41 +87,96 @@ footer {
 
     .links {
         background-color: var(--quaternary-color);
-        color: white;
-        font-size: 13px;
-        font-weight: var(--weight-light);
-        letter-spacing: 2px;
         margin: 0;
         padding-block: 10.5px;
         padding-inline: 20px;
         display: flex;
         justify-content: center;
+        color: white;
+        font-weight: var(--weight-light);
+        font-size: 13px;
+        letter-spacing: 2px;
 
         @media (max-width: $tablet) {
+            padding-block: 12px;
             font-size: 12px;
             letter-spacing: 0.5px;
-            padding-block: 12px;
+        }
+
+        @media (max-width: $smallMobile) {
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+
+        &-left,
+        &-right {
+            display: flex;
+            align-items: center;
+
+            @media (max-width: $smallMobile) {
+                width: 100%;
+            }
+        }
+
+        p {
+            margin-block: 0;
+            line-height: 1.462;
+
+            @media (max-width: $tablet) {
+                line-height: 1.417;
+            }
         }
 
         a {
             color: white;
-            margin-inline: 5px;
+            margin-inline: 11px;
+            position: relative;
+            display: inline-block;
+            line-height: 1.462;
+
+            @media (max-width: $tablet) {
+                line-height: 1.417;
+            }
 
             &:hover {
                 text-decoration: underline;
                 text-underline-offset: 4px;
             }
+        }
 
-            &:first-child {
-                margin-left: 15px;
+        &-left a {
+            margin-inline: 15px 11px;
 
-                @media (max-width: $tablet) {
-                    margin-left: 12px;
-                }
+            @media (max-width: $tablet) {
+                margin-inline-start: 12px;
+            }
+        }
+
+        &-right a {
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: 4px;
+                left: -12px;
+                width: 1px;
+                height: 11px;
+                background-color: white;
             }
 
             &:last-child {
-                margin-right: 0;
+                margin-inline-end: 0;
+            }
+
+            &:first-child {
+                @media (max-width: $smallMobile) {
+                    margin-inline-start: 0;
+                }
+
+                &::before {
+                    @media (max-width: $smallMobile) {
+                        content: none;
+                    }
+                }
             }
         }
     }

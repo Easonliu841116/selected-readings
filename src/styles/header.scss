@@ -68,6 +68,10 @@ header {
             display: none;
         }
 
+        li {
+            position: relative;
+        }
+
         li a {
             color: var(--septenary-color);
             font-size: 13px;
@@ -76,13 +80,18 @@ header {
         }
 
         li:not(:last-child) {
-            margin-right: 10px;
+            margin-right: 25px;
         }
 
         li:not(:last-child)::after {
-            content: "|";
-            color: var(--septenary-color);
-            margin-left: 10px;
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: -12px;
+            transform: translateY(-50%);
+            width: 1px;
+            height: 11px;
+            background-color: var(--septenary-color);
         }
 
         li a:hover {
@@ -208,11 +217,11 @@ header {
 
             g path {
                 transition: all 0.3s ease;
-
-                &:hover {
-                    fill: #3b5998;
-                }
             }
+        }
+
+        &:hover svg g path {
+            fill: #3b5998;
         }
     }
 
@@ -329,7 +338,7 @@ header nav {
             span {
                 padding: 0 3px 5px 3px;
                 border-bottom: 1px solid transparent;
-                transition: all 0.3s ease;
+                transition: border-bottom 0.3s ease;
 
                 @media (max-width: $tablet) {
                     padding-bottom: 0;
@@ -356,7 +365,7 @@ header nav {
             padding: 0;
             display: none;
             position: absolute;
-            top: 35px;
+            top: 33px;
             left: 0;
             z-index: 1;
             background-color: white;

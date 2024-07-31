@@ -18,13 +18,7 @@ class MyHeader extends HTMLElement {
         <div class="search-toggle">
             <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                 width="22" height="22" viewBox="0 0 22 22">
-                <defs>
-                    <clipPath id="clip-path">
-                        <rect id="Rectangle_1141" data-name="Rectangle 1141" width="22" height="22"
-                            fill="#7e7e7e" />
-                    </clipPath>
-                </defs>
-                <g id="Group_11208" data-name="Group 11208" clip-path="url(#clip-path)">
+                <g id="Group_11208" data-name="Group 11208">
                     <path id="Path_16149" data-name="Path 16149"
                         d="M22,21.095l-7.33-7.263A8.411,8.411,0,0,0,8.325,0a8.4,8.4,0,0,0,0,16.806,8.247,8.247,0,0,0,5.459-2.075L21.113,22l.88-.905ZM8.325,15.538a7.135,7.135,0,0,1,0-14.269,7.135,7.135,0,0,1,0,14.269"
                         fill="#7e7e7e" />
@@ -33,15 +27,8 @@ class MyHeader extends HTMLElement {
 
             <svg class="close-icon hidden" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 22 22">
-                <defs>
-                    <clipPath id="clip-path">
-                        <rect id="Rectangle_1220" data-name="Rectangle 1220" width="22" height="22"
-                            fill="#7e7e7e" />
-                    </clipPath>
-                </defs>
                 <g id="Group_11490" data-name="Group 11490" transform="translate(0 0)">
-                    <g id="Group_11486" data-name="Group 11486" transform="translate(0 0)"
-                        clip-path="url(#clip-path)">
+                    <g id="Group_11486" data-name="Group 11486" transform="translate(0 0)">
                         <path id="Path_16324" data-name="Path 16324"
                             d="M21.184,21.947a.853.853,0,0,1-.605-.25L.344,1.461A.856.856,0,0,1,1.554.251L21.79,20.486a.856.856,0,0,1-.605,1.461"
                             transform="translate(-0.04 0)" fill="#7e7e7e" />
@@ -58,13 +45,7 @@ class MyHeader extends HTMLElement {
             <button type="submit">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22"
                     height="22" viewBox="0 0 22 22">
-                    <defs>
-                        <clipPath id="clip-path">
-                            <rect id="Rectangle_1141" data-name="Rectangle 1141" width="22" height="22"
-                                fill="#7e7e7e" />
-                        </clipPath>
-                    </defs>
-                    <g id="Group_11208" data-name="Group 11208" clip-path="url(#clip-path)">
+                    <g id="Group_11208" data-name="Group 11208">
                         <path id="Path_16149" data-name="Path 16149"
                             d="M22,21.095l-7.33-7.263A8.411,8.411,0,0,0,8.325,0a8.4,8.4,0,0,0,0,16.806,8.247,8.247,0,0,0,5.459-2.075L21.113,22l.88-.905ZM8.325,15.538a7.135,7.135,0,0,1,0-14.269,7.135,7.135,0,0,1,0,14.269"
                             fill="#7e7e7e" />
@@ -76,13 +57,7 @@ class MyHeader extends HTMLElement {
         <a href="#" class="facebook">
             <svg id="fb-m" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22"
                 height="22" viewBox="0 0 22 22">
-                <defs>
-                    <clipPath id="clip-path">
-                        <rect id="Rectangle_1190" data-name="Rectangle 1190" width="22" height="22"
-                            fill="#7e7e7e" />
-                    </clipPath>
-                </defs>
-                <g id="Group_11329" data-name="Group 11329" clip-path="url(#clip-path)">
+                <g id="Group_11329" data-name="Group 11329">
                     <path id="Path_16307" data-name="Path 16307"
                         d="M10.183.03A11,11,0,1,0,21.962,10.123,10.983,10.983,0,0,0,10.183.03m1.852,7.157c-.008.737-.021,1.565-.033,2.339a17.674,17.674,0,0,1,2.635.051c.056.247-.388,2.222-.48,2.792l-2.212.013v6.912H9S8.92,12.361,8.92,12.36l-2.536-.011L6.423,9.6,8.942,9.6l.022-2.569c.192-3.33,2.663-3.284,5.726-3.113l.013,2.32c-.926.032-2.674-.12-2.669.954"
                         transform="translate(0 0)" fill="#7e7e7e" fill-rule="evenodd" />
@@ -92,13 +67,7 @@ class MyHeader extends HTMLElement {
 
         <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             width="22" height="17.217" viewBox="0 0 22 17.217">
-            <defs>
-                <clipPath id="clip-path">
-                    <rect id="Rectangle_1221" data-name="Rectangle 1221" width="22" height="17.217"
-                        fill="#7e7e7e" />
-                </clipPath>
-            </defs>
-            <g id="漢堡" clip-path="url(#clip-path)">
+            <g id="漢堡">
                 <path id="Path_16326" data-name="Path 16326"
                     d="M21.043,1.913H.957A.957.957,0,0,1,.957,0H21.043a.957.957,0,1,1,0,1.913" fill="#7e7e7e" />
                 <path id="Path_16327" data-name="Path 16327"
@@ -116,13 +85,8 @@ class MyHeader extends HTMLElement {
     <nav>
         <svg class="close-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             width="22" height="22" viewBox="0 0 22 22">
-            <defs>
-                <clipPath id="clip-path">
-                    <rect id="Rectangle_1220" data-name="Rectangle 1220" width="22" height="22" fill="#7e7e7e" />
-                </clipPath>
-            </defs>
             <g id="Group_11490" data-name="Group 11490" transform="translate(0 0)">
-                <g id="Group_11486" data-name="Group 11486" transform="translate(0 0)" clip-path="url(#clip-path)">
+                <g id="Group_11486" data-name="Group 11486" transform="translate(0 0)">
                     <path id="Path_16324" data-name="Path 16324"
                         d="M21.184,21.947a.853.853,0,0,1-.605-.25L.344,1.461A.856.856,0,0,1,1.554.251L21.79,20.486a.856.856,0,0,1-.605,1.461"
                         transform="translate(-0.04 0)" fill="#7e7e7e" />

@@ -21,9 +21,16 @@ class MyFooter extends HTMLElement {
           </div>
         </div>
 
-        <p class="links">版權所有
-          <a href="#">文化部</a>︱<a href="#">隱私權及安全政策宣示</a>︱<a href="#">著作權聲明</a>
-        </p>
+        <div class="links">
+          <div class="links-left">
+            <p>版權所有</p>
+            <a href="#">文化部</a>
+          </div>
+          <div class="links-right">
+            <a href="#">隱私權及安全政策宣示</a>
+            <a href="#">著作權聲明</a>
+          </div>
+        </div>
       </footer>
 
       <img class="gotop" src="/src/assets/gotop.svg" alt="gotop" width="55" height="55" />

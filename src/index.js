@@ -12,7 +12,7 @@ const registrationArea = document.querySelector(".registration-area");
 const banner = new Splide(".splide-banner", {
     type: "loop",
     //drag: false,
-    focus: 1,
+    //focus: 1,
     //arrows: false,
     //pagination: false,
     //perPage: 4,
