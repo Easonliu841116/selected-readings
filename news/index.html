@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<common-script></common-script>
+
+	<title>最新消息</title>
+</head>
+
+<body>
+	<my-header></my-header>
+	<main id="app">
+		<div class="container breadcrumb">
+			<a href="#">首頁</a> / <a href="#">最新消息</a>
+		</div>
+
+		<div class="container">
+			<my-title title="最新消息" name="news"></my-title>
+
+			<div class="news-list"><!--標準尺寸：300 * 250-->
+				<div class="news-item"><!--標準-->
+					<img src="https://placehold.co/300x250" alt="" width="300" height="250" />
+					<my-news></my-news>
+				</div>
+
+				<div class="news-item"><!--寬度超過-->
+					<img src="https://placehold.co/350x250" alt="" width="300" height="250" />
+					<my-news></my-news>
+				</div>
+
+				<div class="news-item"><!--高度超過-->
+					<img src="https://placehold.co/300x300" alt="" width="300" height="250" />
+					<my-news></my-news>
+				</div>
+
+				<div class="news-item"><!--寬度、高度超過-->
+					<img src="https://placehold.co/350x300" alt="" width="300" height="250" />
+					<my-news></my-news>
+				</div>
+
+				<div class="news-item"><!--寬度不夠-->
+					<img src="https://placehold.co/250x250" alt="" width="300" height="250" />
+					<my-news></my-news>
+				</div>
+
+				<div class="news-item"><!--高度不夠-->
+					<img src="https://placehold.co/300x200" alt="" width="300" height="250" />
+					<my-news></my-news>
+				</div>
+
+				<div class="news-item"><!--寬度、高度不夠-->
+					<img src="https://placehold.co/250x200" alt="" width="300" height="250" />
+					<my-news></my-news>
+				</div>
+			</div>
+		</div>
+	</main>
+	<my-footer></my-footer>
+	<script type="module" src="./index.js"></script>
+</body>
+
+</html>

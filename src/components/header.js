@@ -1,4 +1,5 @@
 import '@/styles/header.scss';
+import logo from '@/assets/logo.png';
 
 class MyHeader extends HTMLElement {
     connectedCallback() {
@@ -6,7 +7,7 @@ class MyHeader extends HTMLElement {
     <header>
     <div class="upper-part container">
         <a class="logo" href="#">
-            <img src="/src/assets/logo.png" alt="中小學生讀物選介-logo" width="240" height="60" />
+            <img src="${logo}" alt="中小學生讀物選介-logo" width="240" height="60" />
         </a>
 
         <ul class="note-pc">

@@ -1,7 +1,9 @@
-import { LitElement, html } from 'lit';
-import '@/styles/title.scss';
+import { LitElement, html, css, unsafeCSS } from 'lit';
+import styles from '@/styles/title.scss?inline';
 
 class MyTitle extends LitElement {
+    static styles = css`${unsafeCSS(styles)}`;
+
     static properties = {
         title: { type: String },
         name: { type: String }
@@ -15,7 +17,7 @@ class MyTitle extends LitElement {
 
     render() {
         return html`
-            <h2 class="title ${this.name}">${this.title}</h2>
+            <h2 class="title title--${this.name}">${this.title}</h2>
         `;
     }
 }
@@ -23,6 +25,8 @@ class MyTitle extends LitElement {
 customElements.define('my-title', MyTitle);
 
 class MyTitleMore extends LitElement {
+    static styles = css`${unsafeCSS(styles)}`;
+
     static properties = {
         title: { type: String },
         name: { type: String }
@@ -36,8 +40,8 @@ class MyTitleMore extends LitElement {
 
     render() {
         return html`
-        <div class="title__wrapper">
-            <h2 class="title ${this.name}">${this.title}</h2>
+        <div class="title__wrapper title__wrapper--${this.name}">
+            <h2 class="title title--${this.name}">${this.title}</h2>
             <a href="#" class="more">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16"
                 height="3.828" viewBox="0 0 16 3.828">

@@ -1,31 +1,12 @@
-import '@splidejs/splide/css';
-import '@/styles/index.scss';
-import '@/components/common-script.js';
-import '@/components/slider.js';
-import '@/components/img-size.js';
+import './src/styles/index.scss';
+import './src/components/common-script.js';
 import Splide from '@splidejs/splide';
 
-const bannerSplide = document.querySelector(".slider-banner");
-const newsSplide = document.querySelector(".splide-news");
-const guideSplide = document.querySelector(".splide-guide");
-const registrationSplide = document.querySelector(".splide-registration");
 const registrationArea = document.querySelector(".registration-area");
 
 const banner = new Splide(".splide-banner", {
     type: "loop",
-    //drag: false,
-    //focus: 1,
-    //arrows: false,
-    //pagination: false,
-    //perPage: 4,
-    //fixedWidth: "230px",
-    //fixedHeight: "230px",
-    //gap: "12px",
     breakpoints: {
-        //1297: {
-        //},
-        //1023: {
-        //},
         767: {
             arrows: false,
         },
@@ -96,3 +77,4 @@ registrationArea.querySelector('.next').addEventListener('click', () => {
 registration.on('click', (e) => {
     registration.go(e.index);
 });
+

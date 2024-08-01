@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite';
-import path from 'path';
+import { resolve } from 'path'
 
 export default defineConfig({
 	css: {
@@ -11,7 +11,16 @@ export default defineConfig({
 	},
 	resolve: {
 		alias: {
-			'@': path.resolve(__dirname, 'src')
+			'@': resolve(__dirname, './src')
 		}
-	}
+	},
+	build: {
+    outDir: 'dist',
+    rollupOptions: {
+      input: {
+        index: resolve(__dirname, 'index.html'),
+        news: resolve(__dirname, 'news/index.html'),
+      }
+    }
+  },
 });

@@ -1,6 +1,6 @@
-import '@/components/header.js';
-import '@/components/footer.js';
-import '@/components/title.js';
+import './header.js';
+import './footer.js';
+import './title.js';
 import '@/styles/style.scss';
 
 class CommonScript extends HTMLElement {

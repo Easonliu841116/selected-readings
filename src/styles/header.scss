@@ -312,6 +312,7 @@ header nav {
             font-weight: var(--weight-normal);
             display: flex;
             position: relative;
+            z-index: 0;
 
             @media (max-width: $tablet) {
                 width: 100%;
@@ -365,9 +366,9 @@ header nav {
             padding: 0;
             display: none;
             position: absolute;
-            top: 33px;
+            top: 34px;
             left: 0;
-            z-index: 1;
+            z-index: -1;
             background-color: white;
             width: calc(100% - 30px);
 

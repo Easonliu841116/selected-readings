@@ -1,4 +1,7 @@
 import '@/styles/footer.scss';
+import ministryOfCulture from '@/assets/ministry-of-culture.svg';
+import qrcode from '@/assets/qrcode.svg';
+import goTop from '@/assets/gotop.svg';
 
 class MyFooter extends HTMLElement {
   connectedCallback() {
@@ -7,7 +10,7 @@ class MyFooter extends HTMLElement {
         <div class="container">
           <div class="left-half">
             <a class="logo" href="#">
-              <img src="/src/assets/ministry-of-culture.svg" alt="文化部" width="178" height="40" />
+              <img src="${ministryOfCulture}" alt="文化部" width="178" height="40" />
             </a>
 
             <p>服務專線：02-86925588  分機 6083  聯合線上股份有限公司</p>
@@ -16,7 +19,7 @@ class MyFooter extends HTMLElement {
           </div>
 
           <div class="right-half">
-            <img class="qrcode" src="/src/assets/qrcode.svg" alt="qrcode" width="110" height="110" />
+            <img class="qrcode" src="${qrcode}" alt="qrcode" width="110" height="110" />
             <div class="fb-page" data-href=""></div>
           </div>
         </div>
@@ -33,7 +36,7 @@ class MyFooter extends HTMLElement {
         </div>
       </footer>
 
-      <img class="gotop" src="/src/assets/gotop.svg" alt="gotop" width="55" height="55" />
+      <img class="gotop" src="${goTop}" alt="gotop" width="55" height="55" />
     `;
   }
 }
